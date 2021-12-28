@@ -10,6 +10,7 @@ class Home extends StatelessWidget {
           style: TextStyle(fontSize: 25.0, color: Colors.amber),
         ),
       ),
+      // ignore: prefer_const_constructors
       body: Center(
         child: const Text(
           "Hi",
