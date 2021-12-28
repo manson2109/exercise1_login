@@ -6,6 +6,7 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //TODO: wrap with form and add form key for text field validation
     return SafeArea(
       child: Scaffold(
         body: Container(
@@ -33,7 +34,7 @@ class LoginScreen extends StatelessWidget {
                     textAlign: TextAlign.left,
                   ),
                 ),
-              ),
+              ), //TODO: add text validation
               const TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
@@ -46,6 +47,7 @@ class LoginScreen extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: Text("Enter password:")),
               ),
+              //TODO: add text validation
               const TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
