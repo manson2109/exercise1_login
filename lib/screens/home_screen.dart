@@ -1,4 +1,4 @@
-import 'package:exercise1_login/widgets/OnPressButton.dart';
+import 'package:exercise1_login/widgets/button.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
