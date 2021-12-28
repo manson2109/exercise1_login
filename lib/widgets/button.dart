@@ -21,12 +21,10 @@ class _LoginButtonState extends State<LoginButton> {
       child: ElevatedButton(
         child: const Text('Login'),
         onPressed: () {
-          setState(() {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Home()),
-            );
-          });
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Home()),
+          );
         },
       ),
     );
