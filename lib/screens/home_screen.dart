@@ -28,6 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Widget _buildPassword() {
     return TextFormField(
+      obscureText: true,
       validator: (dynamic value) {
         if (value.isEmpty) {
           return 'Please enter password';
