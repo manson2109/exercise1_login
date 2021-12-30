@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-//TODO: add key in constructor
 class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,12 +14,17 @@ class Home extends StatelessWidget {
       ),
       // ignore: prefer_const_constructors
       body: Center(
-        child: const Text(
-          "Hi",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 25.0,
-            color: Colors.blueGrey,
+        child: const DecoratedBox(
+          decoration: BoxDecoration(
+            color: Colors.amberAccent,
+          ),
+          child: Text(
+            "Hi",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 25.0,
+              color: Colors.blueGrey,
+            ),
           ),
         ),
       ),
