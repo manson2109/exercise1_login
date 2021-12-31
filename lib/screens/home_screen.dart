@@ -32,6 +32,8 @@ class _LoginScreenState extends State<LoginScreen> {
       validator: (dynamic value) {
         if (value.isEmpty) {
           return 'Please enter password';
+        } else if (value.length < 5) {
+          return 'Password needs to be more than 5 characters';
         }
       },
       decoration: const InputDecoration(
@@ -52,6 +54,9 @@ class _LoginScreenState extends State<LoginScreen> {
             padding: const EdgeInsets.all(8.0),
             child: Column(
               children: [
+                const SizedBox(
+                  height: 10.0,
+                ),
                 Container(
                   width: 200,
                   height: 200,
@@ -64,6 +69,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
+                const SizedBox(
+                  height: 10.0,
+                ),
                 Container(
                   padding: const EdgeInsets.only(top: 10.0),
                   child: const Align(
@@ -75,6 +83,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 _buildUserName(),
+                const SizedBox(
+                  height: 10.0,
+                ),
                 Container(
                   padding: const EdgeInsets.only(top: 10.0),
                   child: const Align(
@@ -83,6 +94,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 _buildPassword(),
+                const SizedBox(
+                  height: 10.0,
+                ),
                 Container(
                   height: 50,
                   width: 100.0,
