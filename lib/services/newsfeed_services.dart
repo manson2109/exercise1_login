@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:exercise1_login/Models/newsfeed.dart';
+import 'package:exercise1_login/models/newsfeed.dart';
 import 'package:http/http.dart' as http;
 
 class ApiService {
